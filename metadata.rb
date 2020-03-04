@@ -6,6 +6,7 @@ description 'Installs/Configures linux_app'
 long_description 'Installs/Configures linux_app'
 version '0.1.0'
 chef_version '>= 14.0'
+depends 'acme_application'
 
 %w(centos).each do |os|
   supports os

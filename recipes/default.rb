@@ -15,3 +15,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+acme_application node['linux_app']['artifact_name'] do
+  artifact_url node['linux_app']['artifact_url']
+end
+
+include_recipe 'acme_application::default'
